@@ -5,7 +5,7 @@
 
 **WARNING** (if you're enabling autoscroll):
 
-  Use this script responsibly. Youtube's (robots.txt)[https://www.youtube.com/robots.txt] generally allows access to search results and public video pages, at least as of writing this README (17/09/2024). However, Automated scraping may violate Youtube's terms of service and may lead to blocking of your IP address or legal actions. If you require access to a large volume of video metadata, it's strongly recommended to use the official YouTube API.
+  Use this script responsibly. Youtube's [crawler guideline](https://www.youtube.com/robots.txt) generally allows access to search results and public video pages, at least as of writing this README (17/09/2024). However, Automated scraping may violate Youtube's terms of service and may lead to blocking of your IP address or legal actions. If you require access to a large volume of video metadata, it's strongly recommended to use the official YouTube API.
 
 
 ## How to Use
