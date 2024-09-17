@@ -10,7 +10,7 @@
 
 ## How to Use
 
-   - Open the YouTube search results page you wish to scrape.
+   - Open the YouTube search results page you wish to scrape. e.g. https://www.youtube.com/results?search_query=ai    
    - Open the browser's developer console (usually by pressing `F12` or `Ctrl+Shift+I`).
    - Paste the script from `extract.js` into the console.
    - Run the script by hitting `Enter` to scrape the data from all visible videos.
@@ -23,7 +23,7 @@
    - `copyToClipboard(data)`: Copies the scraped data to your clipboard.
    - `displayDataInNewWindow(data)`: Opens a new window and displays the scraped data in a formatted view.
 
-JSON Download Format:
+## Download Format
 
    ```json
    [
@@ -32,7 +32,11 @@ JSON Download Format:
            "views": "View Count",
            "uploadDate": "Upload Date"
        },
-       ...
+       {
+           "title": "Video Title",
+           "views": "View Count",
+           "uploadDate": "Upload Date"
+       },       
    ]
    ```
 
