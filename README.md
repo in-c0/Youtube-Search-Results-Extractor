@@ -131,23 +131,24 @@ copyToClipboard(videoData);
 ## Legal Considerations (Fetching Data via APIs vs. Web Scraping)
 
 (Quote from Georgii Vyshnia https://www.kaggle.com/discussions/questions-and-answers/527479):
-
-On a generic note, Web portals (platforms) that offer Web API consider them to be the legitimate way of extracting/consuming their data that they decided to make public. So, the only thing with API is for you to follow their technical requirements/guidelines to use the API in an appropriate way. Btw, the platforms that provide Web API for the data access often consider the ‘bruit force’ web scrapping to be the inappropriate use of their portals.
-
-Regarding web scrapping in general, it is usually safe to scrap the data published on websites publicly (unless the website owners explicitly restrict it with some sort of notice/term-of-use statements). At the time of me typing this, there are no specific laws that prohibit web scraping in the United States, Europe, or Asia. However, most countries have legal frameworks that could potentially apply to web scraping activities (like CFAA, GDPR etc.).
-
-Some legal violations with web scrapping may be imposed if you try to automatically retrieve the data not published publicly. This may refer to
- - Collecting personal data or sensitive information without consent.
- - Scraping copyrighted or proprietary content without explicit consent.
- - Scraping data from restricted or private areas of a website.
- - Unauthorized scraping of government websites or databases.
-Etc.
-
-However, the most severe legal consequences may be faced after the technical web scraping activities. Some of the violent scenarios may refer to
- - Reselling or distributing scraped data in an inappropriate manner
- - Collecting data for discriminatory, unethical, or malicious purposes (such as spam, phishing, fraud, or instigating DDoS attacks).
-
-In such a situation, the person is prosecuted not because of the web scrapping per se. It becomes the consequence to the illegal way of using the data scrapped.
+   
+  
+  "On a generic note, Web portals (platforms) that offer Web API consider them to be the legitimate way of extracting/consuming their data that they decided to make public. So, the only thing with API is for you to follow their technical requirements/guidelines to use the API in an appropriate way. Btw, the platforms that provide Web API for the data access often consider the ‘bruit force’ web scrapping to be the inappropriate use of their portals.
+  
+  Regarding web scrapping in general, it is usually safe to scrap the data published on websites publicly (unless the website owners explicitly restrict it with some sort of notice/term-of-use statements). At the time of me typing this, there are no specific laws that prohibit web scraping in the United States, Europe, or Asia. However, most countries have legal frameworks that could potentially apply to web scraping activities (like CFAA, GDPR etc.).
+  
+  Some legal violations with web scrapping may be imposed if you try to automatically retrieve the data not published publicly. This may refer to
+   - Collecting personal data or sensitive information without consent.
+   - Scraping copyrighted or proprietary content without explicit consent.
+   - Scraping data from restricted or private areas of a website.
+   - Unauthorized scraping of government websites or databases.
+  Etc.
+  
+  However, the most severe legal consequences may be faced after the technical web scraping activities. Some of the violent scenarios may refer to
+   - Reselling or distributing scraped data in an inappropriate manner
+   - Collecting data for discriminatory, unethical, or malicious purposes (such as spam, phishing, fraud, or instigating DDoS attacks).
+  
+  In such a situation, the person is prosecuted not because of the web scrapping per se. It becomes the consequence to the illegal way of using the data scrapped."
 
 
 # License
