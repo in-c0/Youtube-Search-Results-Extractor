@@ -3,6 +3,12 @@
 const videoData = [];
 const waitTime = 2000; // 2 sec
 
+async function runScript() {
+    // Uncomment below for enabling autoscroll. READ WARNING IN README.MD
+    // await autoScroll();
+    scrapeData();
+}
+
 async function autoScroll() {
     let previousHeight = 0;
     let scrollHeight = document.body.scrollHeight;
@@ -36,9 +42,37 @@ function scrapeData() {
     });
 }
 
-async function runScript() {
-    await autoScroll();
-    scrapeData();
+function downloadData(data, filename) {
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 }
 
+function copyToClipboard(data) {
+    const text = JSON.stringify(data, null, 2);
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    alert('Results copied to clipboard!');
+}
+
+function displayDataInNewWindow(data) {
+    const newWindow = window.open('', '', 'width=600,height=400');
+    newWindow.document.write('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+}
+
+
+
 runScript();
+
+
+copyToClipboard(videoData); 
+
