@@ -13,7 +13,7 @@
    - Open the YouTube search results page you wish to scrape. e.g. https://www.youtube.com/results?search_query=ai    
    - Open the browser's developer console (usually by pressing `F12` or `Ctrl+Shift+I`).
    - Paste the following script (`extract.js`) into the console.
-```
+```javascript
 const waitForMilliseconds = 3000; // waits for 3 seconds before scrolling again
 const videoData = [];
 
