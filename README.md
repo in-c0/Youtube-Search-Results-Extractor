@@ -31,7 +31,7 @@ function scrapeData() {
         const title = titleElement ? titleElement.innerText : 'No Title';
 
         const viewsElement = video.querySelector('yt-formatted-string[aria-label]');
-        const viewsMatch = viewsElement ? viewsElement.getAttribute('aria-label').match(/조회수\s([\d,]+회)/) : null;
+        const viewsMatch = viewsElement ? viewsElement.getAttribute('aria-label').match(/\s([\d,]+views)/) : null;
         const views = viewsMatch ? viewsMatch[1] : 'No Views';
 
         const dateElement = video.querySelector('span.inline-metadata-item');
